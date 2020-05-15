@@ -9,7 +9,8 @@ public class simulado2 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int digi;
+		int digi, ep;
+		char dv, hm;
 		
 		// Leitura de escolaridade
 		System.out.println("Qual sua escolaridade?");
@@ -19,6 +20,18 @@ public class simulado2 {
 		System.out.println("4) Pós-graduação");
 		System.out.printf("Digite uma opção: ");
 		digi = sc.nextInt();
+		
+		//Leitura de outros dados
+		
+		System.out.println();
+		System.out.printf("Você tem quantos anos de experiência profissional? ");
+		ep = sc.nextInt();
+		System.out.printf("Você tem disponibilidade para viajar (S/N)? ");
+		dv = sc.next().charAt(0);
+		System.out.printf("Você tem habilitação de motorista (S/N)? ");
+		hm = sc.next().charAt(0);
+		
+		
 		
 		
 		
