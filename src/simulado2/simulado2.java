@@ -31,7 +31,34 @@ public class simulado2 {
 		System.out.printf("Você tem habilitação de motorista (S/N)? ");
 		hm = sc.next().charAt(0);
 		
+		//Escolaridade e experiencia
 		
+		System.out.println();
+		if(digi==1) {
+			System.out.println("Pontos por escolaridade: 10");
+		}
+		else if(digi==2) {
+			System.out.println("Pontos por escolaridade: 20");
+		}
+		else if(digi==3) {
+			System.out.println("Pontos por escolaridade: 30");
+		}
+		else {
+			System.out.println("Pontos por escolaridade: 40");
+		}
+		
+		if(ep==0) {
+			System.out.println("Pontos por experiência: 0");
+		}
+		else if(ep>0 && ep<=2) {
+			System.out.println("Pontos por experiência: 10");
+		}
+		else if(ep>2 && ep<=5) {
+			System.out.println("Pontos por experiência: 20");
+		}
+		else {
+			System.out.println("Pontos por experiência: 40");
+		}
 		
 		
 		
