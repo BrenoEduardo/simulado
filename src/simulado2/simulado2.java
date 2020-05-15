@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class simulado2 {
 
+
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
@@ -60,8 +61,40 @@ public class simulado2 {
 			System.out.println("Pontos por experiência: 40");
 		}
 		
+		//Resultado final
 		
-		
+		System.out.println();
+		if(ep>5 && (dv=='S' || dv=='s') && digi>=3) {
+			System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+			System.out.println("GERENTE");
+			System.out.printf("ANALISTA");
+		}
+		else if(digi>=3 && ep>2 && (hm=='s' || hm=='S')) {
+			System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+			System.out.println("ASSISTENTE");
+			System.out.printf("GERENTE");
+		}
+		else if(ep>5 && (dv=='s' || dv=='S') && digi>=3 && (hm=='s' || hm=='S')) {
+			System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+			System.out.println("ASSISTENTE");
+			System.out.printf("ANALISTA");
+		}
+		else if(ep>5 && (dv=='s' || dv=='S') && digi>=3) {
+			System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+			System.out.printf("ANALISTA");
+		}
+		else if(ep>2 && digi>=3) {
+			System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+			System.out.printf("GERENTE");
+		}
+		else if(digi>=2 && (hm=='S' || hm=='s')){
+			System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+			System.out.printf("ASSISTENTE");
+		}
+
+		else {
+			System.out.printf("Infelizmente seu perfil não atende a empresa");
+		}
 		sc.close();
 
 	}
